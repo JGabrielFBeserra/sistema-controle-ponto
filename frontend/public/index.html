@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Sistema MVC - Frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>🚀 Sistema MVC</h1>
+            <div class="auth-section">
+                <div id="loginSection" class="auth-form">
+                    <input type="email" id="loginEmail" placeholder="E-mail">
+                    <input type="password" id="loginPassword" placeholder="Senha">
+                    <button onclick="login()">Entrar</button>
+                    <button onclick="showRegister()">Registrar</button>
+                </div>
+                <div id="userSection" class="user-info" style="display:none;">
+                    <span id="userName">Usuário</span>
+                    <button onclick="logout()">Sair</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal de Registro -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegister()">&times;</span>
+            <h2>📝 Registrar Usuário</h2>
+            <form onsubmit="register(event)">
+                <input type="email" id="regEmail" placeholder="E-mail" required>
+                <input type="password" id="regPassword" placeholder="Senha" required>
+                <select id="regRole">
+                    <option value="funcionario">Funcionário</option>
+                    <option value="admin">Administrador</option>
+                </select>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div id="loadingMsg" class="loading">⏳ Carregando...</div>
+        <div id="errorMsg" class="error" style="display:none;"></div>
+        <div id="successMsg" class="success" style="display:none;"></div>
+
+        <!-- Navigation -->
+        <nav class="nav-tabs">
+            <button class="tab-btn active" onclick="showTab('departamentos')">🏢 Departamentos</button>
+            <button class="tab-btn" onclick="showTab('usuarios')">👥 Usuários</button>
+            <button class="tab-btn" onclick="showTab('funcionarios')">👤 Funcionários</button>
+            <button class="tab-btn" onclick="showTab('relatorios')">📊 Relatórios</button>
+        </nav>
+
+        <!-- Departamentos Tab -->
+        <div id="departamentos" class="tab-content active">
+            <div class="section-header">
+                <h2>🏢 Departamentos</h2>
+                <button class="btn-primary" onclick="showAddDepartamento()">➕ Novo Departamento</button>
+            </div>
+            
+            <div id="addDepartamento" class="form-section" style="display:none;">
+                <h3>Novo Departamento</h3>
+                <form onsubmit="addDepartamento(event)">
+                    <input type="text" id="deptNome" placeholder="Nome do Departamento" required>
+                    <textarea id="deptDescricao" placeholder="Descrição"></textarea>
+                    <button type="submit">Salvar</button>
+                    <button type="button" onclick="cancelAdd('addDepartamento')">Cancelar</button>
+                </form>
+            </div>
+
+            <div id="editDepartamento" class="form-section" style="display:none;">
+                <h3>Editar Departamento</h3>
+                <form onsubmit="updateDepartamento(event)">
+                    <input type="hidden" id="editDeptId">
+                    <input type="text" id="editDeptNome" placeholder="Nome do Departamento" required>
+                    <textarea id="editDeptDescricao" placeholder="Descrição"></textarea>
+                    <button type="submit">Atualizar</button>
+                    <button type="button" onclick="cancelEdit('editDepartamento')">Cancelar</button>
+                </form>
+            </div>
+
+            <div id="departamentosList" class="list-section"></div>
+        </div>
+
+        <!-- Usuários Tab -->
+        <div id="usuarios" class="tab-content">
+            <div class="section-header">
+                <h2>👥 Usuários</h2>
+                <button class="btn-primary" onclick="showAddUsuario()">➕ Novo Usuário</button>
+            </div>
+            
+            <div id="addUsuario" class="form-section" style="display:none;">
+                <h3>Novo Usuário</h3>
+                <form onsubmit="addUsuario(event)">
+                    <input type="email" id="userEmail" placeholder="E-mail" required>
+                    <input type="password" id="userPassword" placeholder="Senha" required>
+                    <select id="userRole">
+                        <option value="funcionario">Funcionário</option>
+                        <option value="admin">Administrador</option>
+                    </select>
+                    <button type="submit">Salvar</button>
+                    <button type="button" onclick="cancelAdd('addUsuario')">Cancelar</button>
+                </form>
+            </div>
+
+            <div id="editUsuario" class="form-section" style="display:none;">
+                <h3>Editar Usuário</h3>
+                <form onsubmit="updateUsuario(event)">
+                    <input type="hidden" id="editUserId">
+                    <input type="email" id="editUserEmail" placeholder="E-mail" required>
+                    <select id="editUserRole">
+                        <option value="funcionario">Funcionário</option>
+                        <option value="admin">Administrador</option>
+                    </select>
+                    <button type="submit">Atualizar</button>
+                    <button type="button" onclick="cancelEdit('editUsuario')">Cancelar</button>
+                </form>
+            </div>
+
+            <div id="usuariosList" class="list-section"></div>
+        </div>
+
+        <!-- Funcionários Tab -->
+        <div id="funcionarios" class="tab-content">
+            <div class="section-header">
+                <h2>👤 Funcionários</h2>
+                <button class="btn-primary" onclick="showAddFuncionario()">➕ Novo Funcionário</button>
+            </div>
+            
+            <div id="addFuncionario" class="form-section" style="display:none;">
+                <h3>Novo Funcionário</h3>
+                <form onsubmit="addFuncionario(event)">
+                    <input type="text" id="funcNome" placeholder="Nome Completo" required>
+                    <input type="text" id="funcCargo" placeholder="Cargo" required>
+                    <select id="funcDepartamento" required>
+                        <option value="">Selecione um Departamento</option>
+                    </select>
+                    <select id="funcUsuario" required>
+                        <option value="">Selecione um Usuário</option>
+                    </select>
+                    <input type="url" id="funcFoto" placeholder="URL da Foto (opcional)">
+                    <button type="submit">Salvar</button>
+                    <button type="button" onclick="cancelAdd('addFuncionario')">Cancelar</button>
+                </form>
+            </div>
+
+            <div id="editFuncionario" class="form-section" style="display:none;">
+                <h3>Editar Funcionário</h3>
+                <form onsubmit="updateFuncionario(event)">
+                    <input type="hidden" id="editFuncId">
+                    <input type="text" id="editFuncNome" placeholder="Nome Completo" required>
+                    <input type="text" id="editFuncCargo" placeholder="Cargo" required>
+                    <select id="editFuncDepartamento" required>
+                        <option value="">Selecione um Departamento</option>
+                    </select>
+                    <input type="url" id="editFuncFoto" placeholder="URL da Foto (opcional)">
+                    <button type="submit">Atualizar</button>
+                    <button type="button" onclick="cancelEdit('editFuncionario')">Cancelar</button>
+                </form>
+            </div>
+
+            <div id="funcionariosList" class="list-section"></div>
+        </div>
+
+        <!-- Relatórios Tab -->
+        <div id="relatorios" class="tab-content">
+            <div class="section-header">
+                <h2>📊 Relatórios de Ponto</h2>
+                <div class="report-actions">
+                    <button class="btn-primary" onclick="showAddRelatorio()">➕ Novo Relatório</button>
+                    <button class="btn-secondary" onclick="generatePDF()">📄 Gerar PDF</button>
+                </div>
+            </div>
+            
+            <div id="addRelatorio" class="form-section" style="display:none;">
+                <h3>Novo Relatório</h3>
+                <form onsubmit="addRelatorio(event)">
+                    <input type="datetime-local" id="relData" required>
+                    <input type="number" id="relHoras" placeholder="Horas Trabalhadas" step="0.5" max="24" required>
+                    <button type="submit">Salvar</button>
+                    <button type="button" onclick="cancelAdd('addRelatorio')">Cancelar</button>
+                </form>
+            </div>
+
+            <div id="editRelatorio" class="form-section" style="display:none;">
+                <h3>Editar Relatório</h3>
+                <form onsubmit="updateRelatorio(event)">
+                    <input type="hidden" id="editRelId">
+                    <input type="datetime-local" id="editRelData" required>
+                    <input type="number" id="editRelHoras" placeholder="Horas Trabalhadas" step="0.5" max="24" required>
+                    <button type="submit">Atualizar</button>
+                    <button type="button" onclick="cancelEdit('editRelatorio')">Cancelar</button>
+                </form>
+            </div>
+
+            <div class="pdf-section">
+                <h3>📄 Gerar Relatório PDF</h3>
+                <div class="pdf-controls">
+                    <input type="month" id="pdfMonth" value="">
+                    <button onclick="downloadPDF()">📥 Baixar PDF</button>
+                </div>
+            </div>
+
+            <div id="relatoriosList" class="list-section"></div>
+        </div>
+    </main>
+
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

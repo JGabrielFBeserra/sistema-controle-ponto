@@ -1,0 +1,606 @@
+[23/06/2025, 23:52:31] INFO: 🚀 Servidor iniciado na porta 3000 
+[23/06/2025, 23:52:31] INFO: 📝 Sistema de logs ativo - Console + Arquivo 
+[23/06/2025, 23:52:43] INFO: 🚀 Servidor iniciado na porta 3000 
+[23/06/2025, 23:52:44] INFO: 📝 Sistema de logs ativo - Console + Arquivo 
+[23/06/2025, 23:54:40] INFO: POST /auth/register - IP: ::ffff:127.0.0.1 - Iniciado 
+[23/06/2025, 23:54:40] INFO: POST /auth/register - Status: 201 - 413ms - SUCESSO 
+[23/06/2025, 23:55:15] INFO: POST /auth/login - IP: ::ffff:127.0.0.1 - Iniciado 
+[23/06/2025, 23:55:15] INFO: POST /auth/login - Status: 200 - 215ms - SUCESSO 
+[23/06/2025, 23:56:11] INFO: POST /departamentos - IP: ::ffff:127.0.0.1 - Iniciado 
+[23/06/2025, 23:56:12] INFO: Criando novo departamento {"nome":"TI Infra","descricao":"Controle da rede..."}
+[23/06/2025, 23:56:12] INFO: Departamento criado: TI Infra (ID: 4) 
+[23/06/2025, 23:56:12] INFO: POST /departamentos - Status: 201 - 80ms - SUCESSO 
+[23/06/2025, 23:56:23] INFO: GET /departamentos - IP: ::ffff:127.0.0.1 - Iniciado 
+[23/06/2025, 23:56:23] INFO: Buscando todos os departamentos 
+[23/06/2025, 23:56:23] INFO: Encontrados 4 departamentos 
+[23/06/2025, 23:56:23] INFO: GET /departamentos - Status: 200 - 86ms - SUCESSO 
+[23/06/2025, 23:56:38] INFO: GET /departamentos/1 - IP: ::ffff:127.0.0.1 - Iniciado 
+[23/06/2025, 23:56:38] INFO: Buscando departamento ID: 1 
+[23/06/2025, 23:56:38] INFO: Departamento encontrado: Financeiro 
+[23/06/2025, 23:56:38] INFO: GET /departamentos/1 - Status: 200 - 56ms - SUCESSO 
+[23/06/2025, 23:57:00] INFO: PUT /departamentos/1 - IP: ::ffff:127.0.0.1 - Iniciado 
+[23/06/2025, 23:57:00] INFO: Atualizando departamento ID: 1 {"nome":"TI Infra","descricao":"Controle da rede...(editado)"}
+[23/06/2025, 23:57:00] INFO: Departamento atualizado: TI Infra 
+[23/06/2025, 23:57:00] INFO: PUT /departamentos/1 - Status: 200 - 82ms - SUCESSO 
+[23/06/2025, 23:58:09] INFO: POST /funcionarios - IP: ::ffff:127.0.0.1 - Iniciado 
+[23/06/2025, 23:58:09] INFO: POST /funcionarios - Status: 400 - 50ms - ERRO 
+[23/06/2025, 23:58:46] INFO: POST /usuarios - IP: ::ffff:127.0.0.1 - Iniciado 
+[23/06/2025, 23:58:46] INFO: Criando novo usuário {"email":"novo@teste.com","role":"funcionario"}
+[23/06/2025, 23:58:46] INFO: Usuário criado: novo@teste.com (ID: 10) 
+[23/06/2025, 23:58:46] INFO: POST /usuarios - Status: 201 - 231ms - SUCESSO 
+[23/06/2025, 23:59:01] INFO: GET /usuarios - IP: ::ffff:127.0.0.1 - Iniciado 
+[23/06/2025, 23:59:01] INFO: Buscando todos os usuários 
+[23/06/2025, 23:59:01] INFO: Encontrados 9 usuários 
+[23/06/2025, 23:59:01] INFO: GET /usuarios - Status: 200 - 43ms - SUCESSO 
+[23/06/2025, 23:59:40] INFO: POST /relatorios - IP: ::ffff:127.0.0.1 - Iniciado 
+[23/06/2025, 23:59:40] INFO: POST /relatorios - Status: 201 - 84ms - SUCESSO 
+[24/06/2025, 00:00:57] INFO: 🚀 Servidor iniciado na porta 3000 
+[24/06/2025, 00:00:57] INFO: 📝 Sistema de logs ativo - Console + Arquivo 
+[24/06/2025, 00:01:09] INFO: 🚀 Servidor iniciado na porta 3000 
+[24/06/2025, 00:01:09] INFO: 📝 Sistema de logs ativo - Console + Arquivo 
+[24/06/2025, 00:02:21] INFO: 🚀 Servidor iniciado na porta 3000 
+[24/06/2025, 00:02:21] INFO: 📝 Sistema de logs ativo - Console + Arquivo 
+[24/06/2025, 00:10:02] INFO: OPTIONS /auth/register - Iniciado 
+[24/06/2025, 00:10:03] INFO: OPTIONS /auth/register - Status: 200 - 43ms - SUCESSO 
+[24/06/2025, 00:10:11] INFO: OPTIONS /auth/register - Iniciado 
+[24/06/2025, 00:10:11] INFO: OPTIONS /auth/register - Status: 200 - 20ms - SUCESSO 
+[24/06/2025, 00:10:18] INFO: OPTIONS /auth/register - Iniciado 
+[24/06/2025, 00:10:18] INFO: OPTIONS /auth/register - Status: 200 - 17ms - SUCESSO 
+[24/06/2025, 00:10:22] INFO: OPTIONS /auth/register - Iniciado 
+[24/06/2025, 00:10:22] INFO: OPTIONS /auth/register - Status: 200 - 12ms - SUCESSO 
+[24/06/2025, 00:10:23] INFO: OPTIONS /auth/register - Iniciado 
+[24/06/2025, 00:10:23] INFO: OPTIONS /auth/register - Status: 200 - 16ms - SUCESSO 
+[24/06/2025, 00:10:24] INFO: OPTIONS /auth/register - Iniciado 
+[24/06/2025, 00:10:25] INFO: OPTIONS /auth/register - Status: 200 - 14ms - SUCESSO 
+[24/06/2025, 00:11:27] INFO: OPTIONS /auth/register - Iniciado 
+[24/06/2025, 00:11:27] INFO: OPTIONS /auth/register - Status: 200 - 14ms - SUCESSO 
+[24/06/2025, 00:11:48] INFO: OPTIONS /departamentos - Iniciado 
+[24/06/2025, 00:11:48] INFO: OPTIONS /departamentos - Status: 401 - 64ms - ERRO 
+[24/06/2025, 00:15:00] INFO: 🚀 Servidor iniciado na porta 3000 
+[24/06/2025, 00:15:00] INFO: 📝 Sistema de logs ativo - Console + Arquivo 
+[24/06/2025, 00:16:36] INFO: 🚀 Servidor iniciado na porta 3000 
+[24/06/2025, 00:16:36] INFO: 📝 Sistema de logs ativo - Console + Arquivo 
+[24/06/2025, 00:17:00] INFO: POST /auth/register - Iniciado 
+[24/06/2025, 00:17:00] INFO: POST /auth/register - Status: 400 - 28ms - ERRO 
+[24/06/2025, 00:17:06] INFO: POST /auth/register - Iniciado 
+[24/06/2025, 00:17:07] INFO: POST /auth/register - Status: 201 - 532ms - SUCESSO 
+[24/06/2025, 00:17:36] INFO: POST /auth/register - Iniciado 
+[24/06/2025, 00:17:36] INFO: POST /auth/register - Status: 400 - 14ms - ERRO 
+[24/06/2025, 00:18:37] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 00:18:37] INFO: POST /auth/login - Status: 200 - 275ms - SUCESSO 
+[24/06/2025, 00:18:37] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 00:18:37] INFO: Buscando todos os departamentos 
+[24/06/2025, 00:18:37] INFO: Encontrados 4 departamentos 
+[24/06/2025, 00:18:37] INFO: GET /departamentos - Status: 200 - 52ms - SUCESSO 
+[24/06/2025, 00:18:41] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 00:18:41] INFO: Buscando todos os usuários 
+[24/06/2025, 00:18:41] INFO: Encontrados 10 usuários 
+[24/06/2025, 00:18:41] INFO: GET /usuarios - Status: 200 - 44ms - SUCESSO 
+[24/06/2025, 00:18:48] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 00:18:48] INFO: Buscando todos os usuários 
+[24/06/2025, 00:18:48] INFO: Encontrados 10 usuários 
+[24/06/2025, 00:18:48] INFO: GET /usuarios - Status: 304 - 33ms - SUCESSO 
+[24/06/2025, 00:18:49] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 00:18:49] INFO: Buscando todos os departamentos 
+[24/06/2025, 00:18:49] INFO: Encontrados 4 departamentos 
+[24/06/2025, 00:18:49] INFO: GET /departamentos - Status: 304 - 35ms - SUCESSO 
+[24/06/2025, 00:19:04] INFO: PUT /departamentos/3 - Iniciado 
+[24/06/2025, 00:19:04] INFO: Atualizando departamento ID: 3 {"nome":"TI Infra","descricao":"Controle da rede...(editado)"}
+[24/06/2025, 00:19:04] INFO: Departamento atualizado: TI Infra 
+[24/06/2025, 00:19:04] INFO: PUT /departamentos/3 - Status: 200 - 68ms - SUCESSO 
+[24/06/2025, 00:19:04] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 00:19:04] INFO: Buscando todos os departamentos 
+[24/06/2025, 00:19:04] INFO: Encontrados 4 departamentos 
+[24/06/2025, 00:19:05] INFO: GET /departamentos - Status: 200 - 38ms - SUCESSO 
+[24/06/2025, 00:19:14] INFO: PUT /departamentos/1 - Iniciado 
+[24/06/2025, 00:19:14] INFO: Atualizando departamento ID: 1 {"nome":"TI Infra (editar)","descricao":"Controle da rede...(editado)"}
+[24/06/2025, 00:19:14] INFO: Departamento atualizado: TI Infra (editar) 
+[24/06/2025, 00:19:14] INFO: PUT /departamentos/1 - Status: 200 - 38ms - SUCESSO 
+[24/06/2025, 00:19:14] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 00:19:14] INFO: Buscando todos os departamentos 
+[24/06/2025, 00:19:14] INFO: Encontrados 4 departamentos 
+[24/06/2025, 00:19:14] INFO: GET /departamentos - Status: 200 - 30ms - SUCESSO 
+[24/06/2025, 00:19:16] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 00:19:16] INFO: Buscando todos os usuários 
+[24/06/2025, 00:19:16] INFO: Encontrados 10 usuários 
+[24/06/2025, 00:19:16] INFO: GET /usuarios - Status: 304 - 32ms - SUCESSO 
+[24/06/2025, 00:19:18] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 00:19:18] INFO: Buscando todos os departamentos 
+[24/06/2025, 00:19:18] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 00:19:18] INFO: Buscando todos os usuários 
+[24/06/2025, 00:19:18] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 00:19:18] INFO: Buscando todos os funcionários 
+[24/06/2025, 00:19:18] INFO: Encontrados 4 departamentos 
+[24/06/2025, 00:19:18] INFO: GET /departamentos - Status: 304 - 63ms - SUCESSO 
+[24/06/2025, 00:19:18] INFO: Encontrados 10 usuários 
+[24/06/2025, 00:19:18] INFO: GET /usuarios - Status: 304 - 64ms - SUCESSO 
+[24/06/2025, 00:19:18] INFO: Encontrados 1 funcionários 
+[24/06/2025, 00:19:18] INFO: GET /funcionarios - Status: 200 - 64ms - SUCESSO 
+[24/06/2025, 00:19:19] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 00:19:19] INFO: Buscando todos os usuários 
+[24/06/2025, 00:19:19] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 00:19:19] INFO: Buscando todos os departamentos 
+[24/06/2025, 00:19:19] INFO: Encontrados 10 usuários 
+[24/06/2025, 00:19:19] INFO: GET /usuarios - Status: 304 - 52ms - SUCESSO 
+[24/06/2025, 00:19:19] INFO: Encontrados 4 departamentos 
+[24/06/2025, 00:19:19] INFO: GET /departamentos - Status: 304 - 48ms - SUCESSO 
+[24/06/2025, 00:19:48] INFO: POST /funcionarios - Iniciado 
+[24/06/2025, 00:19:48] INFO: POST /funcionarios - Status: 400 - 15ms - ERRO 
+[24/06/2025, 00:21:14] INFO: POST /funcionarios - Iniciado 
+[24/06/2025, 00:21:14] INFO: Criando novo funcionário {"nome":"JOAO GABRIEL","cargo":"ANALISTA","departamentoId":2,"usuarioId":11,"foto":"https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/IMG_Academy_Logo.svg/800px-IMG_Academy_Logo.svg.png"}
+[24/06/2025, 00:21:14] INFO: Funcionário criado: JOAO GABRIEL (ID: 6) 
+[24/06/2025, 00:21:14] INFO: POST /funcionarios - Status: 201 - 135ms - SUCESSO 
+[24/06/2025, 00:21:14] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 00:21:14] INFO: Buscando todos os funcionários 
+[24/06/2025, 00:21:14] INFO: Encontrados 2 funcionários 
+[24/06/2025, 00:21:14] INFO: GET /funcionarios - Status: 200 - 51ms - SUCESSO 
+[24/06/2025, 00:22:05] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 00:22:05] INFO: GET /relatorios - Status: 200 - 44ms - SUCESSO 
+[24/06/2025, 00:22:06] INFO: GET /relatorios/pdf?mes=2025-06 - Iniciado 
+[24/06/2025, 00:22:06] INFO: GET /relatorios/pdf?mes=2025-06 - Status: 200 - 98ms - SUCESSO 
+[24/06/2025, 00:22:16] INFO: POST /relatorios - Iniciado 
+[24/06/2025, 00:22:16] INFO: POST /relatorios - Status: 400 - 17ms - ERRO 
+[24/06/2025, 00:22:21] INFO: POST /relatorios - Iniciado 
+[24/06/2025, 00:22:21] INFO: POST /relatorios - Status: 400 - 14ms - ERRO 
+[24/06/2025, 00:22:34] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 00:22:34] INFO: Buscando todos os funcionários 
+[24/06/2025, 00:22:34] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 00:22:34] INFO: Buscando todos os departamentos 
+[24/06/2025, 00:22:34] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 00:22:34] INFO: Buscando todos os usuários 
+[24/06/2025, 00:22:34] INFO: Encontrados 4 departamentos 
+[24/06/2025, 00:22:34] INFO: GET /departamentos - Status: 200 - 49ms - SUCESSO 
+[24/06/2025, 00:22:34] INFO: Encontrados 2 funcionários 
+[24/06/2025, 00:22:34] INFO: GET /funcionarios - Status: 304 - 86ms - SUCESSO 
+[24/06/2025, 00:22:34] INFO: Encontrados 10 usuários 
+[24/06/2025, 00:22:34] INFO: GET /usuarios - Status: 200 - 61ms - SUCESSO 
+[24/06/2025, 00:22:38] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 00:22:38] INFO: Buscando todos os departamentos 
+[24/06/2025, 00:22:38] INFO: Encontrados 4 departamentos 
+[24/06/2025, 00:22:38] INFO: GET /departamentos - Status: 304 - 34ms - SUCESSO 
+[24/06/2025, 00:22:38] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 00:22:38] INFO: Buscando todos os usuários 
+[24/06/2025, 00:22:38] INFO: Encontrados 10 usuários 
+[24/06/2025, 00:22:38] INFO: GET /usuarios - Status: 304 - 29ms - SUCESSO 
+[24/06/2025, 00:22:50] INFO: POST /auth/logout - Iniciado 
+[24/06/2025, 00:22:50] INFO: POST /auth/logout - Status: 200 - 10ms - SUCESSO 
+[24/06/2025, 00:23:11] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 00:23:11] INFO: POST /auth/login - Status: 401 - 281ms - ERRO 
+[24/06/2025, 00:23:14] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 00:23:15] INFO: POST /auth/login - Status: 200 - 286ms - SUCESSO 
+[24/06/2025, 00:23:15] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 00:23:15] INFO: Buscando todos os departamentos 
+[24/06/2025, 00:23:15] INFO: Encontrados 4 departamentos 
+[24/06/2025, 00:23:15] INFO: GET /departamentos - Status: 304 - 30ms - SUCESSO 
+[24/06/2025, 00:23:17] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 00:23:17] INFO: Buscando todos os departamentos 
+[24/06/2025, 00:23:17] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 00:23:17] INFO: Buscando todos os funcionários 
+[24/06/2025, 00:23:17] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 00:23:17] INFO: Buscando todos os usuários 
+[24/06/2025, 00:23:17] INFO: Encontrados 4 departamentos 
+[24/06/2025, 00:23:17] INFO: GET /departamentos - Status: 304 - 74ms - SUCESSO 
+[24/06/2025, 00:23:17] INFO: Encontrados 2 funcionários 
+[24/06/2025, 00:23:17] INFO: GET /funcionarios - Status: 304 - 66ms - SUCESSO 
+[24/06/2025, 00:23:17] INFO: Encontrados 10 usuários 
+[24/06/2025, 00:23:17] INFO: GET /usuarios - Status: 304 - 60ms - SUCESSO 
+[24/06/2025, 00:23:20] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 00:23:20] INFO: GET /relatorios - Status: 304 - 20ms - SUCESSO 
+[24/06/2025, 00:23:22] INFO: POST /relatorios - Iniciado 
+[24/06/2025, 00:23:22] INFO: POST /relatorios - Status: 400 - 10ms - ERRO 
+[24/06/2025, 00:23:27] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 00:23:27] INFO: Buscando todos os departamentos 
+[24/06/2025, 00:23:27] INFO: Encontrados 4 departamentos 
+[24/06/2025, 00:23:27] INFO: GET /departamentos - Status: 304 - 30ms - SUCESSO 
+[24/06/2025, 00:23:30] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 00:23:30] INFO: Buscando todos os usuários 
+[24/06/2025, 00:23:30] INFO: Encontrados 10 usuários 
+[24/06/2025, 00:23:30] INFO: GET /usuarios - Status: 304 - 42ms - SUCESSO 
+[24/06/2025, 08:13:30] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:13:30] INFO: GET /departamentos - Status: 401 - 69ms - ERRO 
+[24/06/2025, 08:13:33] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:13:33] INFO: Buscando todos os usuários 
+[24/06/2025, 08:13:34] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:13:34] INFO: GET /usuarios - Status: 304 - 229ms - SUCESSO 
+[24/06/2025, 08:13:34] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:13:34] INFO: GET /departamentos - Status: 401 - 25ms - ERRO 
+[24/06/2025, 08:13:34] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 08:13:34] INFO: GET /funcionarios - Status: 401 - 16ms - ERRO 
+[24/06/2025, 08:13:34] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:13:34] INFO: Buscando todos os usuários 
+[24/06/2025, 08:13:34] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:13:34] INFO: GET /usuarios - Status: 304 - 29ms - SUCESSO 
+[24/06/2025, 08:13:35] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 08:13:35] INFO: GET /relatorios - Status: 401 - 6ms - ERRO 
+[24/06/2025, 08:16:01] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 08:16:01] INFO: POST /auth/login - Status: 400 - 44ms - ERRO 
+[24/06/2025, 08:16:05] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 08:16:05] INFO: POST /auth/login - Status: 400 - 9ms - ERRO 
+[24/06/2025, 08:16:12] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 08:16:12] INFO: POST /auth/login - Status: 200 - 203ms - SUCESSO 
+[24/06/2025, 08:16:12] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:16:12] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:16:12] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:16:12] INFO: GET /departamentos - Status: 304 - 44ms - SUCESSO 
+[24/06/2025, 08:16:15] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:16:15] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:16:15] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:16:15] INFO: GET /departamentos - Status: 304 - 28ms - SUCESSO 
+[24/06/2025, 08:16:16] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:16:16] INFO: Buscando todos os usuários 
+[24/06/2025, 08:16:16] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:16:16] INFO: GET /usuarios - Status: 304 - 72ms - SUCESSO 
+[24/06/2025, 08:16:17] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:16:17] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:16:17] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:16:17] INFO: Buscando todos os usuários 
+[24/06/2025, 08:16:17] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 08:16:17] INFO: Buscando todos os funcionários 
+[24/06/2025, 08:16:17] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:16:17] INFO: GET /departamentos - Status: 304 - 66ms - SUCESSO 
+[24/06/2025, 08:16:17] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:16:17] INFO: GET /usuarios - Status: 304 - 62ms - SUCESSO 
+[24/06/2025, 08:16:17] INFO: Encontrados 2 funcionários 
+[24/06/2025, 08:16:17] INFO: GET /funcionarios - Status: 304 - 69ms - SUCESSO 
+[24/06/2025, 08:16:19] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:16:19] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:16:19] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:16:19] INFO: GET /departamentos - Status: 304 - 27ms - SUCESSO 
+[24/06/2025, 08:16:26] INFO: PUT /departamentos/1 - Iniciado 
+[24/06/2025, 08:16:27] INFO: Atualizando departamento ID: 1 {"nome":"TI Infra","descricao":"Controle da rede...(editado)"}
+[24/06/2025, 08:16:27] INFO: Departamento atualizado: TI Infra 
+[24/06/2025, 08:16:27] INFO: PUT /departamentos/1 - Status: 200 - 83ms - SUCESSO 
+[24/06/2025, 08:16:27] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:16:27] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:16:27] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:16:27] INFO: GET /departamentos - Status: 200 - 26ms - SUCESSO 
+[24/06/2025, 08:16:33] INFO: PUT /departamentos/1 - Iniciado 
+[24/06/2025, 08:16:33] INFO: Atualizando departamento ID: 1 {"nome":"TI","descricao":"Controle da rede...(editado)"}
+[24/06/2025, 08:16:34] INFO: Departamento atualizado: TI 
+[24/06/2025, 08:16:34] INFO: PUT /departamentos/1 - Status: 200 - 39ms - SUCESSO 
+[24/06/2025, 08:16:34] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:16:34] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:16:34] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:16:34] INFO: GET /departamentos - Status: 200 - 28ms - SUCESSO 
+[24/06/2025, 08:17:01] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:17:01] INFO: Buscando todos os usuários 
+[24/06/2025, 08:17:01] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:17:01] INFO: GET /usuarios - Status: 304 - 32ms - SUCESSO 
+[24/06/2025, 08:17:07] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:17:07] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:17:07] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:17:07] INFO: GET /departamentos - Status: 304 - 33ms - SUCESSO 
+[24/06/2025, 08:17:21] INFO: POST /departamentos - Iniciado 
+[24/06/2025, 08:17:21] INFO: Criando novo departamento {"nome":"FINANCEIRO","descricao":"faz pagamento"}
+[24/06/2025, 08:17:21] INFO: Departamento criado: FINANCEIRO (ID: 5) 
+[24/06/2025, 08:17:21] INFO: POST /departamentos - Status: 201 - 67ms - SUCESSO 
+[24/06/2025, 08:17:21] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:17:21] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:17:21] INFO: Encontrados 5 departamentos 
+[24/06/2025, 08:17:21] INFO: GET /departamentos - Status: 200 - 34ms - SUCESSO 
+[24/06/2025, 08:18:59] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 08:19:00] INFO: POST /auth/login - Status: 200 - 192ms - SUCESSO 
+[24/06/2025, 08:19:00] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:19:00] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:19:00] INFO: Encontrados 5 departamentos 
+[24/06/2025, 08:19:00] INFO: GET /departamentos - Status: 304 - 29ms - SUCESSO 
+[24/06/2025, 08:19:09] INFO: DELETE /departamentos/5 - Iniciado 
+[24/06/2025, 08:19:09] INFO: Excluindo departamento ID: 5 
+[24/06/2025, 08:19:09] INFO: Departamento excluído: 5 
+[24/06/2025, 08:19:09] INFO: DELETE /departamentos/5 - Status: 200 - 60ms - SUCESSO 
+[24/06/2025, 08:19:09] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:19:09] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:19:09] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:19:09] INFO: GET /departamentos - Status: 200 - 35ms - SUCESSO 
+[24/06/2025, 08:19:14] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:19:14] INFO: Buscando todos os usuários 
+[24/06/2025, 08:19:14] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:19:14] INFO: GET /usuarios - Status: 304 - 30ms - SUCESSO 
+[24/06/2025, 08:19:47] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 08:19:47] INFO: Buscando todos os funcionários 
+[24/06/2025, 08:19:47] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:19:47] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:19:47] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:19:47] INFO: Buscando todos os usuários 
+[24/06/2025, 08:19:47] INFO: Encontrados 2 funcionários 
+[24/06/2025, 08:19:47] INFO: GET /funcionarios - Status: 200 - 76ms - SUCESSO 
+[24/06/2025, 08:19:47] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:19:47] INFO: GET /departamentos - Status: 304 - 76ms - SUCESSO 
+[24/06/2025, 08:19:47] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:19:47] INFO: GET /usuarios - Status: 304 - 69ms - SUCESSO 
+[24/06/2025, 08:19:51] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:19:51] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:19:51] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:19:51] INFO: Buscando todos os usuários 
+[24/06/2025, 08:19:51] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:19:51] INFO: GET /departamentos - Status: 304 - 45ms - SUCESSO 
+[24/06/2025, 08:19:51] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:19:51] INFO: GET /usuarios - Status: 304 - 42ms - SUCESSO 
+[24/06/2025, 08:20:08] INFO: POST /funcionarios - Iniciado 
+[24/06/2025, 08:20:08] INFO: POST /funcionarios - Status: 400 - 25ms - ERRO 
+[24/06/2025, 08:20:40] INFO: POST /funcionarios - Iniciado 
+[24/06/2025, 08:20:40] INFO: Criando novo funcionário {"nome":"VITOR RAMOS MENEZES","cargo":"DESENVOLVEDOR","departamentoId":3,"usuarioId":4,"foto":"https://avatars.githubusercontent.com/u/133153956?v=4"}
+[24/06/2025, 08:20:40] INFO: Funcionário criado: VITOR RAMOS MENEZES (ID: 7) 
+[24/06/2025, 08:20:40] INFO: POST /funcionarios - Status: 201 - 81ms - SUCESSO 
+[24/06/2025, 08:20:40] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 08:20:40] INFO: Buscando todos os funcionários 
+[24/06/2025, 08:20:40] INFO: Encontrados 3 funcionários 
+[24/06/2025, 08:20:40] INFO: GET /funcionarios - Status: 200 - 38ms - SUCESSO 
+[24/06/2025, 08:25:00] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 08:25:00] INFO: POST /auth/login - Status: 200 - 199ms - SUCESSO 
+[24/06/2025, 08:25:00] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:25:00] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:25:00] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:25:00] INFO: GET /departamentos - Status: 200 - 45ms - SUCESSO 
+[24/06/2025, 08:25:02] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 08:25:02] INFO: GET /relatorios - Status: 304 - 52ms - SUCESSO 
+[24/06/2025, 08:25:03] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:25:03] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:25:03] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 08:25:03] INFO: Buscando todos os funcionários 
+[24/06/2025, 08:25:03] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:25:03] INFO: Buscando todos os usuários 
+[24/06/2025, 08:25:03] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:25:03] INFO: GET /departamentos - Status: 304 - 73ms - SUCESSO 
+[24/06/2025, 08:25:03] INFO: Encontrados 3 funcionários 
+[24/06/2025, 08:25:03] INFO: GET /funcionarios - Status: 304 - 63ms - SUCESSO 
+[24/06/2025, 08:25:03] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:25:03] INFO: GET /usuarios - Status: 200 - 60ms - SUCESSO 
+[24/06/2025, 08:25:05] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 08:25:05] INFO: GET /relatorios - Status: 304 - 16ms - SUCESSO 
+[24/06/2025, 08:25:08] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 08:25:08] INFO: Buscando todos os funcionários 
+[24/06/2025, 08:25:08] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:25:08] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:25:08] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:25:08] INFO: Buscando todos os usuários 
+[24/06/2025, 08:25:08] INFO: Encontrados 3 funcionários 
+[24/06/2025, 08:25:08] INFO: GET /funcionarios - Status: 304 - 83ms - SUCESSO 
+[24/06/2025, 08:25:08] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:25:08] INFO: GET /departamentos - Status: 304 - 78ms - SUCESSO 
+[24/06/2025, 08:25:08] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:25:08] INFO: GET /usuarios - Status: 304 - 76ms - SUCESSO 
+[24/06/2025, 08:25:11] INFO: POST /auth/logout - Iniciado 
+[24/06/2025, 08:25:11] INFO: POST /auth/logout - Status: 200 - 11ms - SUCESSO 
+[24/06/2025, 08:25:17] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 08:25:17] INFO: POST /auth/login - Status: 200 - 198ms - SUCESSO 
+[24/06/2025, 08:25:17] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:25:17] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:25:17] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:25:17] INFO: GET /departamentos - Status: 304 - 27ms - SUCESSO 
+[24/06/2025, 08:25:19] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 08:25:19] INFO: GET /relatorios - Status: 304 - 11ms - SUCESSO 
+[24/06/2025, 08:25:22] INFO: POST /relatorios - Iniciado 
+[24/06/2025, 08:25:22] INFO: POST /relatorios - Status: 400 - 17ms - ERRO 
+[24/06/2025, 08:25:26] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 08:25:26] INFO: Buscando todos os funcionários 
+[24/06/2025, 08:25:26] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:25:26] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:25:26] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:25:26] INFO: Buscando todos os usuários 
+[24/06/2025, 08:25:26] INFO: Encontrados 3 funcionários 
+[24/06/2025, 08:25:26] INFO: GET /funcionarios - Status: 304 - 70ms - SUCESSO 
+[24/06/2025, 08:25:26] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:25:26] INFO: GET /departamentos - Status: 304 - 68ms - SUCESSO 
+[24/06/2025, 08:25:26] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:25:26] INFO: GET /usuarios - Status: 304 - 64ms - SUCESSO 
+[24/06/2025, 08:25:27] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 08:25:27] INFO: GET /relatorios - Status: 304 - 13ms - SUCESSO 
+[24/06/2025, 08:26:18] INFO: POST /auth/logout - Iniciado 
+[24/06/2025, 08:26:18] INFO: POST /auth/logout - Status: 200 - 10ms - SUCESSO 
+[24/06/2025, 08:26:28] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 08:26:28] INFO: POST /auth/login - Status: 200 - 133ms - SUCESSO 
+[24/06/2025, 08:26:28] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:26:28] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:26:28] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:26:28] INFO: GET /departamentos - Status: 304 - 32ms - SUCESSO 
+[24/06/2025, 08:26:32] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:26:32] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:26:32] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 08:26:32] INFO: Buscando todos os funcionários 
+[24/06/2025, 08:26:32] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:26:32] INFO: Buscando todos os usuários 
+[24/06/2025, 08:26:32] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:26:32] INFO: GET /departamentos - Status: 304 - 72ms - SUCESSO 
+[24/06/2025, 08:26:32] INFO: Encontrados 3 funcionários 
+[24/06/2025, 08:26:32] INFO: GET /funcionarios - Status: 304 - 72ms - SUCESSO 
+[24/06/2025, 08:26:32] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:26:32] INFO: GET /usuarios - Status: 304 - 68ms - SUCESSO 
+[24/06/2025, 08:26:33] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 08:26:33] INFO: GET /relatorios - Status: 200 - 39ms - SUCESSO 
+[24/06/2025, 08:26:39] INFO: GET /relatorios/pdf?mes=2025-06 - Iniciado 
+[24/06/2025, 08:26:39] INFO: GET /relatorios/pdf?mes=2025-06 - Status: 200 - 107ms - SUCESSO 
+[24/06/2025, 08:26:51] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:26:51] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:26:51] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:26:51] INFO: GET /departamentos - Status: 304 - 32ms - SUCESSO 
+[24/06/2025, 08:26:52] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:26:52] INFO: Buscando todos os usuários 
+[24/06/2025, 08:26:52] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:26:52] INFO: GET /usuarios - Status: 304 - 28ms - SUCESSO 
+[24/06/2025, 08:26:53] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:26:53] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:26:53] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:26:53] INFO: Buscando todos os usuários 
+[24/06/2025, 08:26:53] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:26:53] INFO: GET /departamentos - Status: 304 - 51ms - SUCESSO 
+[24/06/2025, 08:26:53] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 08:26:53] INFO: Buscando todos os funcionários 
+[24/06/2025, 08:26:53] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:26:53] INFO: GET /usuarios - Status: 304 - 72ms - SUCESSO 
+[24/06/2025, 08:26:53] INFO: Encontrados 3 funcionários 
+[24/06/2025, 08:26:53] INFO: GET /funcionarios - Status: 304 - 49ms - SUCESSO 
+[24/06/2025, 08:30:50] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 08:30:51] INFO: GET /relatorios - Status: 304 - 171ms - SUCESSO 
+[24/06/2025, 08:30:53] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 08:30:53] INFO: Buscando todos os funcionários 
+[24/06/2025, 08:30:53] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:30:53] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:30:53] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:30:53] INFO: Buscando todos os usuários 
+[24/06/2025, 08:30:53] INFO: Encontrados 3 funcionários 
+[24/06/2025, 08:30:53] INFO: GET /funcionarios - Status: 304 - 76ms - SUCESSO 
+[24/06/2025, 08:30:53] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:30:53] INFO: GET /departamentos - Status: 304 - 69ms - SUCESSO 
+[24/06/2025, 08:30:53] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:30:53] INFO: GET /usuarios - Status: 304 - 67ms - SUCESSO 
+[24/06/2025, 08:30:54] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:30:54] INFO: Buscando todos os usuários 
+[24/06/2025, 08:30:54] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:30:54] INFO: GET /usuarios - Status: 304 - 28ms - SUCESSO 
+[24/06/2025, 08:59:50] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 08:59:50] INFO: Buscando todos os funcionários 
+[24/06/2025, 08:59:50] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:59:50] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:59:50] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 08:59:50] INFO: Buscando todos os usuários 
+[24/06/2025, 08:59:50] INFO: Encontrados 3 funcionários 
+[24/06/2025, 08:59:50] INFO: GET /funcionarios - Status: 304 - 272ms - SUCESSO 
+[24/06/2025, 08:59:50] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:59:50] INFO: GET /departamentos - Status: 304 - 201ms - SUCESSO 
+[24/06/2025, 08:59:50] INFO: Encontrados 10 usuários 
+[24/06/2025, 08:59:50] INFO: GET /usuarios - Status: 304 - 193ms - SUCESSO 
+[24/06/2025, 08:59:51] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 08:59:51] INFO: GET /relatorios - Status: 304 - 25ms - SUCESSO 
+[24/06/2025, 08:59:55] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 08:59:55] INFO: Buscando todos os departamentos 
+[24/06/2025, 08:59:55] INFO: Encontrados 4 departamentos 
+[24/06/2025, 08:59:55] INFO: GET /departamentos - Status: 304 - 37ms - SUCESSO 
+[24/06/2025, 09:00:02] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 09:00:02] INFO: GET /relatorios - Status: 304 - 21ms - SUCESSO 
+[24/06/2025, 09:00:04] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 09:00:04] INFO: Buscando todos os departamentos 
+[24/06/2025, 09:00:04] INFO: Encontrados 4 departamentos 
+[24/06/2025, 09:00:04] INFO: GET /departamentos - Status: 304 - 30ms - SUCESSO 
+[24/06/2025, 09:00:05] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 09:00:05] INFO: GET /relatorios - Status: 304 - 15ms - SUCESSO 
+[24/06/2025, 09:00:05] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 09:00:05] INFO: Buscando todos os departamentos 
+[24/06/2025, 09:00:05] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 09:00:05] INFO: Buscando todos os funcionários 
+[24/06/2025, 09:00:05] INFO: Encontrados 4 departamentos 
+[24/06/2025, 09:00:05] INFO: GET /departamentos - Status: 304 - 54ms - SUCESSO 
+[24/06/2025, 09:00:05] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 09:00:05] INFO: Buscando todos os usuários 
+[24/06/2025, 09:00:05] INFO: Encontrados 3 funcionários 
+[24/06/2025, 09:00:05] INFO: GET /funcionarios - Status: 304 - 70ms - SUCESSO 
+[24/06/2025, 09:00:05] INFO: Encontrados 10 usuários 
+[24/06/2025, 09:00:05] INFO: GET /usuarios - Status: 304 - 48ms - SUCESSO 
+[24/06/2025, 09:00:06] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 09:00:06] INFO: Buscando todos os usuários 
+[24/06/2025, 09:00:06] INFO: Encontrados 10 usuários 
+[24/06/2025, 09:00:06] INFO: GET /usuarios - Status: 304 - 27ms - SUCESSO 
+[24/06/2025, 09:00:06] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 09:00:06] INFO: Buscando todos os departamentos 
+[24/06/2025, 09:00:06] INFO: Encontrados 4 departamentos 
+[24/06/2025, 09:00:06] INFO: GET /departamentos - Status: 304 - 29ms - SUCESSO 
+[24/06/2025, 09:51:05] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 09:51:05] INFO: Buscando todos os usuários 
+[24/06/2025, 09:51:05] INFO: Encontrados 10 usuários 
+[24/06/2025, 09:51:05] INFO: GET /usuarios - Status: 304 - 300ms - SUCESSO 
+[24/06/2025, 09:51:06] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 09:51:06] INFO: Buscando todos os usuários 
+[24/06/2025, 09:51:06] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 09:51:06] INFO: Buscando todos os funcionários 
+[24/06/2025, 09:51:06] INFO: Encontrados 10 usuários 
+[24/06/2025, 09:51:06] INFO: GET /usuarios - Status: 304 - 86ms - SUCESSO 
+[24/06/2025, 09:51:06] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 09:51:06] INFO: Buscando todos os departamentos 
+[24/06/2025, 09:51:06] INFO: Encontrados 3 funcionários 
+[24/06/2025, 09:51:06] INFO: GET /funcionarios - Status: 304 - 122ms - SUCESSO 
+[24/06/2025, 09:51:06] INFO: Encontrados 4 departamentos 
+[24/06/2025, 09:51:06] INFO: GET /departamentos - Status: 304 - 79ms - SUCESSO 
+[24/06/2025, 09:51:07] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 09:51:07] INFO: GET /relatorios - Status: 304 - 78ms - SUCESSO 
+[24/06/2025, 09:51:08] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 09:51:08] INFO: Buscando todos os funcionários 
+[24/06/2025, 09:51:08] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 09:51:08] INFO: Buscando todos os departamentos 
+[24/06/2025, 09:51:08] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 09:51:08] INFO: Buscando todos os usuários 
+[24/06/2025, 09:51:08] INFO: Encontrados 3 funcionários 
+[24/06/2025, 09:51:08] INFO: GET /funcionarios - Status: 304 - 74ms - SUCESSO 
+[24/06/2025, 09:51:08] INFO: Encontrados 4 departamentos 
+[24/06/2025, 09:51:08] INFO: GET /departamentos - Status: 304 - 66ms - SUCESSO 
+[24/06/2025, 09:51:08] INFO: Encontrados 10 usuários 
+[24/06/2025, 09:51:08] INFO: GET /usuarios - Status: 304 - 67ms - SUCESSO 
+[24/06/2025, 09:51:08] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 09:51:08] INFO: GET /relatorios - Status: 304 - 14ms - SUCESSO 
+[24/06/2025, 09:51:14] INFO: GET /relatorios/pdf?mes=2025-05 - Iniciado 
+[24/06/2025, 09:51:14] INFO: GET /relatorios/pdf?mes=2025-05 - Status: 200 - 115ms - SUCESSO 
+[24/06/2025, 09:51:21] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 09:51:21] INFO: Buscando todos os departamentos 
+[24/06/2025, 09:51:21] INFO: Encontrados 4 departamentos 
+[24/06/2025, 09:51:21] INFO: GET /departamentos - Status: 304 - 37ms - SUCESSO 
+[24/06/2025, 09:51:22] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 09:51:22] INFO: Buscando todos os usuários 
+[24/06/2025, 09:51:22] INFO: Encontrados 10 usuários 
+[24/06/2025, 09:51:22] INFO: GET /usuarios - Status: 304 - 23ms - SUCESSO 
+[24/06/2025, 09:51:29] INFO: DELETE /usuarios/1 - Iniciado 
+[24/06/2025, 09:51:29] INFO: Excluindo usuário ID: 1 
+[24/06/2025, 09:51:29] INFO: Usuário excluído: 1 
+[24/06/2025, 09:51:29] INFO: DELETE /usuarios/1 - Status: 200 - 109ms - SUCESSO 
+[24/06/2025, 09:51:29] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 09:51:29] INFO: Buscando todos os usuários 
+[24/06/2025, 09:51:29] INFO: Encontrados 9 usuários 
+[24/06/2025, 09:51:29] INFO: GET /usuarios - Status: 200 - 40ms - SUCESSO 
+[24/06/2025, 09:51:31] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 09:51:31] INFO: Buscando todos os departamentos 
+[24/06/2025, 09:51:31] INFO: Encontrados 4 departamentos 
+[24/06/2025, 09:51:31] INFO: GET /departamentos - Status: 304 - 34ms - SUCESSO 
+[24/06/2025, 09:51:35] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 09:51:35] INFO: Buscando todos os usuários 
+[24/06/2025, 09:51:35] INFO: Encontrados 9 usuários 
+[24/06/2025, 09:51:35] INFO: GET /usuarios - Status: 304 - 34ms - SUCESSO 
+[24/06/2025, 09:51:35] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 09:51:35] INFO: Buscando todos os departamentos 
+[24/06/2025, 09:51:35] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 09:51:35] INFO: Buscando todos os usuários 
+[24/06/2025, 09:51:35] INFO: Encontrados 4 departamentos 
+[24/06/2025, 09:51:35] INFO: GET /departamentos - Status: 304 - 57ms - SUCESSO 
+[24/06/2025, 09:51:35] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 09:51:35] INFO: Buscando todos os funcionários 
+[24/06/2025, 09:51:35] INFO: Encontrados 9 usuários 
+[24/06/2025, 09:51:35] INFO: GET /usuarios - Status: 304 - 68ms - SUCESSO 
+[24/06/2025, 09:51:35] INFO: Encontrados 3 funcionários 
+[24/06/2025, 09:51:35] INFO: GET /funcionarios - Status: 304 - 47ms - SUCESSO 
+[24/06/2025, 09:51:36] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 09:51:36] INFO: GET /relatorios - Status: 304 - 16ms - SUCESSO 
+[24/06/2025, 09:51:39] INFO: POST /relatorios - Iniciado 
+[24/06/2025, 09:51:39] INFO: POST /relatorios - Status: 400 - 16ms - ERRO 
+[24/06/2025, 09:51:41] INFO: POST /relatorios - Iniciado 
+[24/06/2025, 09:51:41] INFO: POST /relatorios - Status: 400 - 12ms - ERRO 
+[24/06/2025, 09:51:44] INFO: POST /relatorios - Iniciado 
+[24/06/2025, 09:51:44] INFO: POST /relatorios - Status: 400 - 9ms - ERRO 
+[24/06/2025, 09:51:56] INFO: POST /relatorios - Iniciado 
+[24/06/2025, 09:51:56] INFO: POST /relatorios - Status: 400 - 15ms - ERRO 
+[24/06/2025, 09:52:18] INFO: POST /relatorios - Iniciado 
+[24/06/2025, 09:52:18] INFO: POST /relatorios - Status: 400 - 13ms - ERRO 
+[24/06/2025, 09:54:56] INFO: 🚀 Servidor iniciado na porta 3000 
+[24/06/2025, 09:54:56] INFO: 📝 Sistema de logs ativo - Console + Arquivo 
+[24/06/2025, 09:55:03] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 09:55:04] INFO: POST /auth/login - Status: 401 - 540ms - ERRO 
+[24/06/2025, 09:55:05] INFO: POST /auth/login - Iniciado 
+[24/06/2025, 09:55:05] INFO: POST /auth/login - Status: 200 - 309ms - SUCESSO 
+[24/06/2025, 09:55:06] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 09:55:06] INFO: Buscando todos os departamentos 
+[24/06/2025, 09:55:06] INFO: Encontrados 4 departamentos 
+[24/06/2025, 09:55:06] INFO: GET /departamentos - Status: 304 - 60ms - SUCESSO 
+[24/06/2025, 09:55:07] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 09:55:07] INFO: Buscando todos os usuários 
+[24/06/2025, 09:55:07] INFO: Encontrados 9 usuários 
+[24/06/2025, 09:55:07] INFO: GET /usuarios - Status: 304 - 46ms - SUCESSO 
+[24/06/2025, 09:55:09] INFO: GET /departamentos - Iniciado 
+[24/06/2025, 09:55:09] INFO: Buscando todos os departamentos 
+[24/06/2025, 09:55:09] INFO: GET /usuarios - Iniciado 
+[24/06/2025, 09:55:09] INFO: Buscando todos os usuários 
+[24/06/2025, 09:55:09] INFO: Encontrados 4 departamentos 
+[24/06/2025, 09:55:09] INFO: GET /departamentos - Status: 304 - 70ms - SUCESSO 
+[24/06/2025, 09:55:09] INFO: GET /funcionarios - Iniciado 
+[24/06/2025, 09:55:09] INFO: Buscando todos os funcionários 
+[24/06/2025, 09:55:09] INFO: Encontrados 9 usuários 
+[24/06/2025, 09:55:09] INFO: GET /usuarios - Status: 304 - 111ms - SUCESSO 
+[24/06/2025, 09:55:09] INFO: Encontrados 3 funcionários 
+[24/06/2025, 09:55:09] INFO: GET /funcionarios - Status: 304 - 78ms - SUCESSO 
+[24/06/2025, 09:55:09] INFO: GET /relatorios - Iniciado 
+[24/06/2025, 09:55:10] INFO: GET /relatorios - Status: 304 - 34ms - SUCESSO 
