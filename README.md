@@ -1,6 +1,6 @@
 # 🚀 Sistema de Controle de Ponto - DevWeb1
 
-Sistema de controle de frequência e gestão de funcionários desenvolvido como projeto acadêmico que resultou em **nota 10/10**. Implementa autenticação JWT, CRUD completo e geração de relatórios PDF.
+Sistema de controle de frequência e gestão de funcionários desenvolvido como projeto acadêmico Implementa autenticação JWT, CRUD completo e geração de relatórios PDF.
 
 ## ✨ O que faz
 
